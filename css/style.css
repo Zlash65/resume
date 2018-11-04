@@ -200,23 +200,23 @@ h3 {
   margin-right: 8px;
   transition-duration: 0.3s;
 }
-.resume .func .work, .resume .func .edu {
+.resume .func .work {
   float: left;
 }
-.resume .func .work small, .resume .func .edu small {
+.resume .func .work small {
   display: block;
   opacity: 0.7;
 }
-.resume .func .work ul li, .resume .func .edu ul li {
+.resume .func .work ul li {
   position: relative;
   margin-left: 15px;
   padding-left: 25px;
   padding-bottom: 15px;
 }
-.resume .func .work ul li:hover::before, .resume .func .edu ul li:hover::before {
+.resume .func .work ul li:hover::before {
   animation: circle 1.2s infinite;
 }
-.resume .func .work ul li:hover span, .resume .func .edu ul li:hover span {
+.resume .func .work ul li:hover span {
   color: #e07a5f;
 }
 @keyframes circle {
@@ -227,23 +227,23 @@ h3 {
     box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
   }
 }
-.resume .func .work ul li:first-of-type::before, .resume .func .edu ul li:first-of-type::before {
+.resume .func .work ul li:first-of-type::before {
   width: 10px;
   height: 10px;
   left: -2px;
 }
-.resume .func .work ul li:last-of-type, .resume .func .edu ul li:last-of-type {
+.resume .func .work ul li:last-of-type {
   padding-bottom: 3px;
 }
-.resume .func .work ul li:last-of-type::after, .resume .func .edu ul li:last-of-type::after {
+.resume .func .work ul li:last-of-type::after {
   border-radius: 1.5px;
 }
-.resume .func .work ul li::before, .resume .func .work ul li::after, .resume .func .edu ul li::before, .resume .func .edu ul li::after {
+.resume .func .work ul li::before, .resume .func .work ul li::after {
   content: "";
   display: block;
   position: absolute;
 }
-.resume .func .work ul li::before, .resume .func .edu ul li::before {
+.resume .func .work ul li.circ::before {
   width: 7px;
   height: 7px;
   border: 3px solid #3d405b;
@@ -252,14 +252,24 @@ h3 {
   left: 0;
   z-index: 1;
 }
-.resume .func .work ul li::after, .resume .func .edu ul li::after {
+.resume .func .work ul li.solid-circ::before {
+	width: 7px;
+	height: 7px;
+	border: 1px solid #3d405b;
+	background: #000;
+	border-radius: 50%;
+	left: 1px;
+	top: 3px;
+	z-index: 1;
+  }
+.resume .func .work ul li::after {
   width: 3px;
   height: 100%;
   background: #3d405b;
   left: 5px;
   top: 0;
 }
-.resume .func .work ul li span, .resume .func .edu ul li span {
+.resume .func .work ul li span {
   transition-duration: 0.3s;
 }
 .resume .func .work {
