@@ -306,7 +306,7 @@ h3 {
 	border: 1px solid #3d405b;
 	background: #000;
 	border-radius: 50%;
-	left: 1px;
+	left: 1.57px;
 	top: 3px;
 	z-index: 1;
 }
@@ -613,12 +613,13 @@ h3 {
 	font-size: 10px;
 }
 
-.strengths ol {
+.strengths ol, .activities ol {
 	margin-top: -2px;
 	margin-left: -15px;
 	list-style-type: square;
+	margin-bottom: -2px;
 }
 
-.strengths ol li {
+.strengths ol li, .activities ol li {
 	padding-top: 4px;
 }
