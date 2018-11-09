@@ -31,9 +31,9 @@
       Counter: percent
     }, {
       duration: 1000,
-      step: function(now) {
-        return $(this).text(Math.ceil(now) + '%');
-      }
+    //   step: function(now) {
+    //     return $(this).text(Math.ceil(now) + '%');
+    //   }
     });
   });
 
