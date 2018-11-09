@@ -612,3 +612,13 @@ h3 {
 	font-style: italic;
 	font-size: 10px;
 }
+
+.strengths ol {
+	margin-top: -2px;
+	margin-left: -15px;
+	list-style-type: square;
+}
+
+.strengths ol li {
+	padding-top: 4px;
+}
